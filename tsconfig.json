@@ -17,6 +17,7 @@
     "paths": {
       "@app": ["./app/core/App.tsx"],
       "@components": ["./app/components/index"],
+      "@screens": ["./app/screens/index"],
       "@mocks/*": ["./app/assets/mocks/*"],
       "@core/*": ["./app/core/*"]
     }
