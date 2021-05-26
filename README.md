@@ -12,5 +12,6 @@
 
 1. `@app` -> `./app/core/App.tsx`
 2. `@components` -> `./app/components/index`
-3. `@mocks` -> `./app/assets/mocks/*`
-4. `@core` -> `./app/core/*`
+3. `@screens` -> `./app/screens/index`
+4. `@mocks` -> `./app/assets/mocks/*`
+5. `@core` -> `./app/core/*`

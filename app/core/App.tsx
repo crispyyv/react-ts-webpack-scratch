@@ -1,5 +1,7 @@
 import React from "react";
 
-const App = () => <> hello world</>;
+import { TestComponent } from "@components";
+
+const App = () => <TestComponent />;
 
 export default App;
