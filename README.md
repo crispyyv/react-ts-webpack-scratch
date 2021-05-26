@@ -4,9 +4,12 @@
 
 1. For start clone repo `git clone ...`
 
-2. Then `cd react-ts-webpack-scratch`
 
-3. Then `yarn start:dev`
+2. Go to main dir `cd react-ts-webpack-scratch`
+
+3. Instal deps `yarn`/`npm i`
+
+4. Start project `yarn start:dev`/`npm run start:dev`
 
 ## Main aliases:
 
