@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "allowJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "paths": {
+      "@app": ["./app/core/App.tsx"],
+      "@components": ["./app/components/index"],
+      "@mocks/*": ["./app/assets/mocks/*"],
+      "@core/*": ["./app/core/*"]
+    }
+  },
+  "include": ["./", "./webpack.config.ts"]
+}
