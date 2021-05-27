@@ -1,7 +1,10 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import path from "path";
-import { TsconfigPathsPlugin } from "tsconfig-paths-webpack-plugin";
 import webpack, { Configuration } from "webpack";
+
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import { TsconfigPathsPlugin } from "tsconfig-paths-webpack-plugin";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+
+import path from "path";
 
 const webpackConfig = (env): Configuration => ({
   entry: "./index.tsx",
@@ -37,6 +40,7 @@ const webpackConfig = (env): Configuration => ({
       "process.env.NAME": JSON.stringify(require("./package.json").name),
       "process.env.VERSION": JSON.stringify(require("./package.json").version),
     }),
+    new ForkTsCheckerWebpackPlugin(),
   ],
 });
 
