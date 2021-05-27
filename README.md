@@ -18,3 +18,8 @@
 3. `@screens` -> `./app/screens/index`
 4. `@mocks` -> `./app/assets/mocks/*`
 5. `@core` -> `./app/core/*`
+
+
+### Todo:
+1. Add `eslint` config
+2. Add `prettier` config
