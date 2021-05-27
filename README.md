@@ -2,7 +2,7 @@
 
 ## Fast start:
 
-1. For start clone repo `git clone ...`
+1. Сlone repo `git clone ...`
 
 
 2. Go to main dir `cd react-ts-webpack-scratch`
