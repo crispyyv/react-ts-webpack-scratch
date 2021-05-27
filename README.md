@@ -2,11 +2,14 @@
 
 ## Fast start:
 
-1. For start clone repo `git clone ...`
+1. Сlone repo `git clone ...`
 
-2. Then `cd react-ts-webpack-scratch`
 
-3. Then `yarn start:dev`
+2. Go to main dir `cd react-ts-webpack-scratch`
+
+3. Instal deps `yarn`/`npm i`
+
+4. Start project `yarn start:dev`/`npm run start:dev`
 
 ## Main aliases:
 
@@ -15,3 +18,8 @@
 3. `@screens` -> `./app/screens/index`
 4. `@mocks` -> `./app/assets/mocks/*`
 5. `@core` -> `./app/core/*`
+
+
+### Todo:
+1. Add `eslint` config
+2. Add `prettier` config
