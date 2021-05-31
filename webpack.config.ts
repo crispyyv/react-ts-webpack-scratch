@@ -6,7 +6,13 @@ import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 
 import path from "path";
 
-const webpackConfig = (env): Configuration => ({
+const webpackConfig = (
+  env
+): Configuration & {
+  devServer?: {
+    historyApiFallback: boolean;
+  };
+} => ({
   entry: "./index.tsx",
   ...(env.production || !env.development ? {} : { devtool: "eval-source-map" }),
   resolve: {
@@ -30,6 +36,9 @@ const webpackConfig = (env): Configuration => ({
         exclude: /dist/,
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
